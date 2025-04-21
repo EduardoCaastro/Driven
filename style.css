@@ -1,0 +1,386 @@
+body {
+    width: 414px;
+    background-color: #EEEEEE;
+}
+
+.topo {
+    display: flex;
+    position: fixed;
+    flex-direction: column;
+    justify-content: center;
+    align-items: flex-start;
+    position: fixed;
+    top: 0px;
+    background-color: #CF2B2B;
+    width: 414px;
+    height: 92px;
+    box-shadow: 2px 2px 5px rgba(0, 0, 0, 0.3);
+    z-index: 1;
+}
+
+.fundo {
+    width: 414px;
+    background-color: #EEEEEE;
+}
+
+.primeiro {
+    margin-top: 123px;
+    margin-bottom: 17px;
+}
+
+.listaPratos {
+    display: flex;
+    overflow-x: scroll;
+    justify-content: space-between;
+    margin-left: 19px;
+}
+
+.pratoFrango, 
+.pratoCarne, 
+.pratoLing {
+    display: flex;
+    width: 172px;
+    height: 216px;
+    flex-direction: column;
+    justify-content: space-around;
+    margin-right: 16px;
+    background-color: #FFFFFF;
+    border-radius: 9px;
+    box-shadow: 2px 2px 5px rgba(0, 0, 0, 0.3);
+}
+
+.pratoFrango img,
+.pratoCarne img,
+.pratoLing img {
+    display: flex;
+   justify-content: center;
+    width: 144px;
+    height: 87px;
+    border-radius: 4px;
+    margin-top: 18px;
+    margin-left: 10px;
+    margin-bottom: 0px;
+}
+
+.listaBebidas {
+    margin-top: 18px;
+    margin-left: 19px;
+    display: flex;
+    overflow-x: scroll;
+    justify-content: space-between;
+    align-items: center;
+}
+
+.bebidaCoca,
+.bebidaFanta,
+.bebidaSuco {
+    display: flex;
+    width: 172px;
+    height: 216px;
+    flex-direction: column;
+    justify-content: space-around;
+    margin-right: 16px;
+    background-color: #FFFFFF;
+    border-radius: 9px;
+    box-shadow: 2px 2px 5px rgba(0, 0, 0, 0.3);
+}
+
+.bebidaCoca img,
+.bebidaFanta img,
+.bebidaSuco img {
+    width: 144px;
+    height: 87px;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    margin-top: 18px;
+    margin-left: 10px;
+    border-radius: 4px;
+}
+
+.listaSobremesa {
+    display: flex;
+    overflow-x: scroll;
+    justify-content: space-between;
+    margin-left: 19px;
+    margin-bottom: 108px;
+}
+
+.sobremesaPudim,
+.sobremesaMousse,
+.sobremesaBrownie {
+    display: flex;
+    width: 172px;
+    height: 216px;
+    flex-direction: column;
+    justify-content: space-around;
+    margin-right: 16px;
+    background-color: #FFFFFF;
+    border-radius:9px;
+    box-shadow: 2px 2px 5px rgba(0, 0, 0, 0.3);
+}
+
+.sobremesaPudim img,
+.sobremesaMousse img,
+.sobremesaBrownie img {
+    width: 144px;
+    height: 87px;
+    margin-top: 18px;
+    margin-left: 10px;
+    border-radius: 4px;
+}
+
+.pedido {
+    display: flex;
+    position: fixed;
+    bottom: 0px;
+    width: 414px;
+    height: 92px;
+    background-color: #FFFFFF;
+    justify-content: center;
+    align-items: center;
+}
+
+.desligado {
+    display: flex;
+    flex-wrap: wrap;
+    flex-direction: column;
+    width: 364px;
+    height: 61px;
+    background-color: #CBCBCB;
+    border-radius: 50px;
+    align-items: center;
+    justify-content: space-evenly;
+    font-family: "Reboto";
+    font-weight: 400;
+    font-size: 20px;
+    text-align: center;
+    color: #FFFFFF;
+    padding-left: 60px;
+    padding-right: 60px;
+}
+
+.ativo {
+    display: flex;
+    flex-wrap: wrap;
+    flex-direction: column;
+    width: 364px;
+    height: 61px;
+    border-radius: 50px;
+    align-items: center;
+    justify-content: space-evenly;
+    font-family: "Reboto";
+    font-weight: 400;
+    font-size: 20px;
+    text-align: center;
+    color: black;
+    padding-left: 60px;
+    padding-right: 60px;
+    background-color: #32b72f;
+}
+
+h1 {
+    width: 248px;
+    height: 44px;
+    font-family: "Righteous";
+    font-weight: 400;
+    font-size: 44px;
+    margin-top: 8px;
+    margin-left: 21px;
+    color: #FFFFFF;
+}
+
+h2 {
+    font-family: "Righteous";
+    font-weight: 400px;
+    font-size: 26px;
+    margin-top: 27px;
+    margin-bottom: 17px;
+    margin-left: 19px;
+    color: #333333;
+
+}
+
+h3 {
+    font-family: "Roboto";
+    font-weight: 700;
+    font-size: 16px;
+    height: 23px;
+    color: #333333;
+    margin-left: 14px;
+    margin-bottom: 0px;
+    margin-top: 8px;
+    text-align: start;
+}
+
+h4 {
+    width: 226px;
+    height: 17px;
+    font-family: "Roboto";
+    font-weight: 400;
+    font-size: 18px;
+    margin-top: 5px;
+    margin-bottom: 18px;
+    margin-left: 21px;
+    color: #FFFFFF;
+}
+h5 {
+    font-family: "Reboto";
+    font-weight: 400;
+    font-size: 16px;
+    margin-top: 5px;
+    margin-left: 14px;
+    color: #000000;
+    text-align: start;
+}
+
+p {
+    font-family: "Roboto";
+    font-size: 15px; 
+    font-weight: 300;
+    margin-top: 4px;
+    margin-bottom: 0px;
+    margin-left: 14px;
+    width: 147px;
+    color: #a6a6a6;
+    text-align: start;
+}
+
+.escondido {
+    display: none;
+}
+
+.conteudo {
+    width: 414px;
+    height: 100%;
+    display: flex;
+    position: fixed;
+    justify-content: center;
+    align-items: center;
+    top: 0px;
+    background-color: rgba(238, 238, 238, 0.8);
+    z-index: 1;
+}
+
+.confirmeSeuPedido {
+    width: 377px;
+    height: 353px;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: space-around;
+    border-radius: 9px;
+    background-color: #50d074;
+    box-shadow: 0px 0px 10px 1px #00000040;
+}
+
+.confirme {
+    font-family: "roboto";
+    font-weight: 700;
+    font-size: 22px;
+    margin-top: 21px;
+}
+
+.escolhido {
+    display: flex;
+}
+
+.p-escolhido {
+    display: flex;
+    justify-content: flex-start ;
+    align-items: center;
+    font-family: "roboto";
+    font-weight: 400;
+    font-size: 22px;
+    color: #FFFFFF;
+}
+
+.b-escolhido {
+    display: flex;
+    justify-content: flex-start ;
+    align-items: center;
+    font-family: "roboto";
+    font-weight: 400;
+    font-size: 22px;
+    color: #FFFFFF;
+}
+
+.s-escolhido {
+    display: flex;
+    justify-content: flex-start ;
+    align-items: center;
+    font-family: "roboto";
+    font-weight: 400;
+    font-size: 22px;
+    color: #FFFFFF;
+}
+
+.preco {
+    display: flex;
+    justify-content: flex-end ;
+    align-items: center;
+    font-family: "roboto";
+    font-weight: 400;
+    font-size: 22px;
+    color: #FFFFFF;
+}
+
+.total {
+    display: flex;
+}
+
+.p-total {
+    display: flex;
+    justify-content: flex-start;
+    align-items: center;
+    font-family: "roboto";
+    font-weight: 700;
+    font-size: 22px;
+    color: #FFFFFF;
+}
+
+.valor {
+    display: flex;
+    justify-content: flex-end;
+    align-items: center;
+    font-family: "roboto";
+    font-weight: 700;
+    font-size: 22px;
+    color: #FFFFFF;
+}
+
+.botaoPedir {
+    width: 329px;
+    height: 52px;
+    font-family: "reboto";
+    font-weight: 700;
+    font-size: 22px;
+    border-radius: 100px;
+    background-color: #FFFFFF;
+}
+
+.cancelar {
+    font-family: "roboto";
+    font-weight: 700;
+    font-size: 20px;
+}
+
+.selecionado {
+    border: solid 2px #50d074;
+}
+
+.checkMark {
+    color: #50d074;
+    margin-bottom: 5px;
+    margin-left: 140px;
+}
+
+.desabilitado {
+    display: none;
+}
+
+a {
+    text-decoration: none;
+    color: #50d074;
+}
