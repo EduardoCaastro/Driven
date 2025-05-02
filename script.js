@@ -62,21 +62,20 @@ function selecionarSobremesa(sobremesaSelecionada) {
 
 
 function liberarBotao() {
-    const botao = document.querySelector('.pedido button')
+    const botao = document.querySelector('.pedido button');
    if (comida && bebida && sobremesa) {
     botao.classList.remove("desligado");
     botao.classList.add("ativo");
     botao.innerHTML = "Fechar pedido";
-    botao.onclick = fecharPedido;
-    }else {
-    botao.classList.remove("ativo");
-    botao.classList.add("desligado");
-    botao.innerHTML = "Selecione os 3 itens para fechar o pedido";
-    botao.onclick = null;
-   }
+    }else{
+        botao.classList.remove("ativo");
+        botao.classList.add("desligado");
+    }
 }
 
 function fecharPedido() {
-        const painel = document.querySelector(".conteudo");
-        painel.classList.remove("escondido");
+    const painel = document.querySelector(".fundo");
+    if (comida && bebida && sobremesa) {
+    painel.classList.remove("esconder");
+    }
 }

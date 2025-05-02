@@ -247,11 +247,11 @@ p {
     text-align: start;
 }
 
-.escondido {
+.esconder {
     display: none;
 }
 
-.conteudo {
+.painelFlut {
     width: 414px;
     height: 100%;
     display: flex;
