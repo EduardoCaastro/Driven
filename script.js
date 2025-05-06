@@ -64,9 +64,9 @@ function selecionarSobremesa(sobremesaSelecionada) {
 function liberarBotao() {
     const botao = document.querySelector('.pedido button');
    if (comida && bebida && sobremesa) {
-    botao.classList.remove("desligado");
-    botao.classList.add("ativo");
-    botao.innerHTML = "Fechar pedido";
+        botao.classList.remove("desligado");
+        botao.classList.add("ativo");
+        botao.innerHTML = "Fechar pedido";
     }else{
         botao.classList.remove("ativo");
         botao.classList.add("desligado");
@@ -76,6 +76,6 @@ function liberarBotao() {
 function fecharPedido() {
     const painel = document.querySelector(".fundo");
     if (comida && bebida && sobremesa) {
-    painel.classList.remove("esconder");
+        painel.classList.remove("esconder");
     }
 }

@@ -247,11 +247,7 @@ p {
     text-align: start;
 }
 
-.esconder {
-    display: none;
-}
-
-.painelFlut {
+.painel {
     width: 414px;
     height: 100%;
     display: flex;
@@ -261,6 +257,10 @@ p {
     top: 0px;
     background-color: rgba(238, 238, 238, 0.8);
     z-index: 1;
+}
+
+.esconder {
+    display: none;
 }
 
 .confirmeSeuPedido {
