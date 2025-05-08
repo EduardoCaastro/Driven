@@ -104,30 +104,35 @@
             </div>
         </div>
         <div class="pedido">
-            <button class="desligado" onclick="liberarBotao(); fecharPedido()">Selecione os 3 itens para fechar o pedido</button>
+            <button class="desligado ">Selecione os 3 itens para fechar o pedido</button>
         </div>
+
     </div>
 
-    <div class="painel esconder">
-        <div class="confirmeSeuPedido">
-            <h2 class="confirme">Confirme seu pedido</h2>
-            <div class="escolhido">
-                <p class="p-escolhido">Prato: Preço</p>
+        <div class="conteudo escondido">
+            <div class="confirmeSeuPedido">
+                <h2 class="Confirme">Confirme seu pedido</h2>
+                <div class="escolhido">
+                    <p class="p-escolhido">Prato</p>
+                    <p class="preco">Preco</p>
+                </div>
+                <div class="escolhido">
+                    <p class="b-escolhido">bebida</p>
+                    <p class="preco">Preco</p>
+                </div>
+                <div class="escolhido">
+                    <p class="s-escolhido">sobremesa</p>
+                    <p class="preco">Preco</p>
+                </div>
+                <div class="total">
+                    <p class="p-total">Total</p>
+                    <p class="valor">valor</p>
+                </div>
+                <button class="botaoPedir"><a href="">Tudo certo, pode pedir!</a></button>
+                <h3 class="cancelar">Cancelar</h3>
             </div>
-            <div class="escolhido">
-                <p class="b-escolhido">bebida: Preço</p>
-            </div>
-            <div class="escolhido">
-                <p class="s-escolhido">sobremesa: Preço</p>
-            </div>
-            <div class="total">
-                <p class="p-total">Total: valor</p>
-            </div>
-            <button class="botaoPedir"><a href="">Tudo certo, pode pedir!</a></button>
-            <button onclick="cancelarConfirmacao()" class="cancelar">Cancelar</button>
         </div>
-    </div>
-  
+    
 
 <script type="module" src="https://unpkg.com/ionicons@7.1.0/dist/ionicons/ionicons.esm.js"></script>
 <script nomodule src="https://unpkg.com/ionicons@7.1.0/dist/ionicons/ionicons.js"></script>
