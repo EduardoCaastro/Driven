@@ -199,7 +199,6 @@ h2 {
     margin-bottom: 17px;
     margin-left: 19px;
     color: #333333;
-
 }
 
 h3 {
@@ -247,20 +246,21 @@ p {
     text-align: start;
 }
 
-.escondido {
-    display: none;
-}
-
-.conteudo {
+.painel {
     width: 414px;
     height: 100%;
     display: flex;
     position: fixed;
     justify-content: center;
     align-items: center;
+    text-align: center;
     top: 0px;
     background-color: rgba(238, 238, 238, 0.8);
     z-index: 1;
+}
+
+.esconder {
+    display: none;
 }
 
 .confirmeSeuPedido {
@@ -280,15 +280,20 @@ p {
     font-weight: 700;
     font-size: 22px;
     margin-top: 21px;
+    color: #FFFFFF;
 }
 
 .escolhido {
+    width: 414px;
     display: flex;
+    justify-content: center;
+    text-align: center;
+    white-space: nowrap;
 }
 
 .p-escolhido {
     display: flex;
-    justify-content: flex-start ;
+    justify-content:center ;
     align-items: center;
     font-family: "roboto";
     font-weight: 400;
@@ -298,7 +303,7 @@ p {
 
 .b-escolhido {
     display: flex;
-    justify-content: flex-start ;
+    justify-content: center;
     align-items: center;
     font-family: "roboto";
     font-weight: 400;
@@ -308,7 +313,8 @@ p {
 
 .s-escolhido {
     display: flex;
-    justify-content: flex-start ;
+    white-space: nowrap;
+    justify-content: center;
     align-items: center;
     font-family: "roboto";
     font-weight: 400;
@@ -316,18 +322,19 @@ p {
     color: #FFFFFF;
 }
 
-.preco {
+/*.preco {
     display: flex;
-    justify-content: flex-end ;
+    justify-content: center ;
     align-items: center;
     font-family: "roboto";
     font-weight: 400;
     font-size: 22px;
     color: #FFFFFF;
-}
+}*/
 
 .total {
     display: flex;
+    align-items: center;
 }
 
 .p-total {
@@ -338,9 +345,10 @@ p {
     font-weight: 700;
     font-size: 22px;
     color: #FFFFFF;
+    white-space: nowrap;
 }
 
-.valor {
+/*.valor {
     display: flex;
     justify-content: flex-end;
     align-items: center;
@@ -348,7 +356,7 @@ p {
     font-weight: 700;
     font-size: 22px;
     color: #FFFFFF;
-}
+}*/
 
 .botaoPedir {
     width: 329px;
@@ -364,6 +372,9 @@ p {
     font-family: "roboto";
     font-weight: 700;
     font-size: 20px;
+    color: #FFFFFF;
+    background-color: #50d074;
+    border: none;
 }
 
 .selecionado {
