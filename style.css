@@ -322,7 +322,7 @@ p {
     color: #FFFFFF;
 }
 
-/*.preco {
+.preco {
     display: flex;
     justify-content: center ;
     align-items: center;
@@ -330,7 +330,7 @@ p {
     font-weight: 400;
     font-size: 22px;
     color: #FFFFFF;
-}*/
+}
 
 .total {
     display: flex;

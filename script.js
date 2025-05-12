@@ -113,6 +113,21 @@ function fecharPedido() {
     }
 }
 
+//criação de função para ir para o whatsApp
+function irParaWhatsApp() {
+   
+    const mensagem = `Pedido:
+    - Prato: ${nomeComida}
+    - Bebida: ${nomeBebida}
+    - Sobremesa: ${nomeSobremesa}
+    Total: R$ ${total}`;
+
+    const numero = "5524999999999";
+    const link = `https://wa.me/${numero}?text=${encodeURIComponent(mensagem)}`;
+    window.open(link);
+}
+
+//função para canelar e voltar as escolha dos itens
 function cancelarConfirmacao() {
     btCancela = document.querySelector(".painel");
     btCancela.classList.add("esconder");
