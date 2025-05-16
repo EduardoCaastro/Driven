@@ -2,6 +2,10 @@
 let comida = null;
 let bebida = null;
 let sobremesa = null;
+let nomeComida = "";
+let nomeBebida = "";
+let nomeSobremesa = "";
+let total = "";
 
 //função para selecionar comida, remover selecionado e/ou selecionar outra se necessário
 function selecionarPrato(comidaSelecionada) { 
@@ -86,15 +90,15 @@ function fecharPedido() {
         painel.classList.remove("esconder");
         
         //Buscar os valores em pratos html
-        const nomeComida = comida.querySelector("h3").innerText;
+        nomeComida = comida.querySelector("h3").innerText;
         const precoComida = comida.querySelector("h5").innerText;
 
         //Buscar os valores em bebida html
-        const nomeBebida = bebida.querySelector("h3").innerText;
+        nomeBebida = bebida.querySelector("h3").innerText;
         const precoBebida = bebida.querySelector("h5").innerText;
 
         //Buscar os valores em sobremesas html
-        const nomeSobremesa = sobremesa.querySelector("h3").innerText;
+        nomeSobremesa = sobremesa.querySelector("h3").innerText;
         const precoSobremesa = sobremesa.querySelector("h5").innerText;
 
         // Atualiza os textos no painel
@@ -107,7 +111,7 @@ function fecharPedido() {
         const valorBebida = parseFloat(precoBebida.replace("R$", "").trim());
         const valorSobremesa = parseFloat(precoSobremesa.replace("R$", "").trim());
 
-        const total = (valorComida + valorBebida + valorSobremesa).toFixed(2);
+        total = (valorComida + valorBebida + valorSobremesa).toFixed(2);
 
         document.querySelector(".p-total").innerHTML = `Total: R$ ${total}`;
     }
@@ -116,7 +120,7 @@ function fecharPedido() {
 //criação de função para ir para o whatsApp
 function irParaWhatsApp() {
    
-    const mensagem = `Pedido:
+    const mensagem = `Olá, gostaria de fazer o pedido:
     - Prato: ${nomeComida}
     - Bebida: ${nomeBebida}
     - Sobremesa: ${nomeSobremesa}
