@@ -120,10 +120,10 @@ function fecharPedido() {
 //criação de função para ir para o whatsApp
 function irParaWhatsApp() {
    
-    const mensagem = `Olá, gostaria de fazer o pedido:
-    - Prato: ${nomeComida}
-    - Bebida: ${nomeBebida}
-    - Sobremesa: ${nomeSobremesa}
+    const mensagem = `Olá, gostaria de fazer o pedido:\n
+    - Prato: ${nomeComida}\n
+    - Bebida: ${nomeBebida}\n
+    - Sobremesa: ${nomeSobremesa}\n
     Total: R$ ${total}`;
 
     const numero = "5524999999999";
