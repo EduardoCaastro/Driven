@@ -1,0 +1,164 @@
+* {
+    box-sizing: border-box;
+}
+
+body {
+    background: #FFF;
+    font-family: Roboto;
+    background: #7f7fd5;
+    background: rgb(227, 82, 136);
+    /* A linha abaixo faz o degradê no fundo do site */
+    background: linear-gradient(90deg, rgba(227, 82, 136, 1) 0%, rgba(248, 208, 123, 1) 35%, rgba(248, 208, 123, 1) 100%);
+    margin: 0;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    height: 100vh;
+}
+
+/* Container da todo list em si, que é o quadradinho centralizado */
+.container {
+    background-color: #ecf0f1;
+    box-shadow: 0 0 3px rgba(0, 0, 0, 0.1);
+    margin: 0 auto;
+    width: 480px;
+}
+
+/* Header com título e botão da todo list */
+h1 {
+    color: #ecf0f1;
+    font-size: 24px;
+    font-weight: normal;
+    margin: 0;
+    padding: 10px 20px;
+    text-transform: uppercase;
+}
+
+.header {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    background: #1C1A22;
+    position: relative;
+}
+
+.header h1 {
+    width: 100%;
+}
+
+.header button {
+    background-color: rgba(248, 208, 123, 1);
+    color: black;
+    padding: 4px;
+    margin: 0 10px;
+    border: none;
+    font-weight: bold;
+    font-size: 18px;
+    position: absolute;
+    right: 0;
+    display: flex;
+    align-items: center;
+}
+
+.header button:hover {
+    cursor: pointer;
+    filter: brightness(90%);
+}
+
+.header button:active {
+    transform: translateY(4px); /* Animação ao clicar no botão */
+}
+
+/* Caixa de texto das tarefas e botão de adicionar tarefas */
+input {
+    background-color: #ecf0f1;
+    border: 3px solid #ecf0f1;
+    box-sizing: border-box;
+    color: #1C1A22;
+    font-size: 18px;
+    margin: 0;
+    padding: 13px 13px 13px 20px;
+    width: 100%;
+    outline: none;
+}
+
+input:focus { /* Enquanto está colocado o cursor para escrever */
+    background-color: #FFF;
+    border: 3px solid #E3538E;
+    outline: none;
+}
+
+.title {
+    display: flex;
+}
+
+.title button {
+    background-color: #E3538E;
+    color: white;
+    padding: 10px;
+    border: none;
+    font-weight: bold;
+}
+
+.title button:hover {
+    cursor: pointer;
+    filter: brightness(90%);
+}
+
+.title button:active {
+    transform: translateY(4px); /* Animação ao clicar no botão */
+}
+
+/* Classe para esconder elementos */
+.hide {
+    display: none;
+}
+
+/* Lista das tarefas */
+ul {
+    list-style: none;
+    margin: 0;
+    padding: 0;
+}
+
+/* Itens da lista de tarefas */
+li {
+    background-color: white;
+    color: #2c3e50;
+    height: 40px;
+    line-height: 40px;
+}
+
+li:nth-child(2n) {
+    background-color: #ecf0f1;
+}
+
+/* Botão de deletar a tarefa */
+.btn-delete {
+    background-color: #e74c3c;
+    color: #FFF;
+    display: inline-block;
+    margin-right: 10px;
+    text-align: center;
+    width: 0;
+    /* Opacity e Transition são usados para animar o botão */
+    opacity: 0; 
+    transition: all 0.2s;
+}
+
+/* Parte da animação do botão de deletar, que ocorre quando passa o mouse por cima do item */
+li:hover div.btn-delete {
+    width: 40px;
+    opacity: 1.0;
+}
+
+/* Classe adicionada quando tarefa é marcada como feita */
+.finalizada {
+    text-decoration: line-through;
+    font-style: italic;
+    background-color: #A3A1AF;
+}
+
+li.finalizada:nth-child(2n) {
+    background-color: #A3A1AF;
+}
