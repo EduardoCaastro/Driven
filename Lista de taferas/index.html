@@ -1,0 +1,36 @@
+<!DOCTYPE html>
+<html>
+
+<head>
+    <meta charset="utf-8" />
+    <title>Todo List</title>
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <link href="https://fonts.googleapis.com/css?family=Roboto:400,500, 700" rel="stylesheet">
+    <link rel="stylesheet" type="text/css" media="screen" href="assets/css/estilos.css" />
+</head>
+
+<body>
+    <div class="container">
+
+        <!-- Header da todo list, com título e botão de marcar tudo -->
+        <div class="header">
+            <h1>To-do List (3)</h1>
+            <button onclick="finalizarTodas()"><ion-icon name="checkbox-outline"></ion-icon></button>
+        </div>
+
+        <!-- Input para adicionar tarefas e o botão que vai executar a ação -->
+        <div class="title">
+            <input type="text" placeholder="Add New To-do">
+            <button onclick="adicionarNovaTarefa()">Add</button>
+        </div>
+
+        <!-- Lista com os itens, que são cada tarefa -->
+        <ul></ul>
+    </div>
+
+    <!-- Importações do ion icons e do script JS que está em assets/js/scripts.js -->
+    <script src="https://unpkg.com/ionicons@5.5.2/dist/ionicons/ionicons.js"></script>
+    <script type="text/javascript" src="assets/js/scripts.js"></script>
+</body>
+
+</html>
